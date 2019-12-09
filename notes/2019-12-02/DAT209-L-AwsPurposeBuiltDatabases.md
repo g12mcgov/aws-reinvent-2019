@@ -27,6 +27,7 @@ Common Database Categories:
 			- Compression etc
 	7. Ledger
 		- Once written to, can never be updated
+	8. Wide Column
 
 Top of mind for customers:
 	- Move to fully managed
@@ -88,4 +89,20 @@ Database Management:
 	- Challenging to manage large-scale Cassandra cluster at scale
 	- Amazon Managed (Apache) Cassandra Service (MCS)
 		- Serverless
+
+Athena Federated Query:
+	- Run queries against many data stores
+	- Can write own connectors for interacting with other data stores
+
+Machine Learning:
+	- Select and train the model
+	- Write app code to read from DB
+	- Query and format data for ML algo
+	- Call ML service to run algo
+	- Format output
+
+Aurora Integration with ML:
+	- Integrations with Athena, SageMaker
+	- Interaction with AWS ML services inside SQL
+		- Example of querying a table, then running a column through sentiment analysis, returned in a new table
 
