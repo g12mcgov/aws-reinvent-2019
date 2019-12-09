@@ -1,4 +1,4 @@
-# Notes
+# CON333 - Best practices for CI/CD using AWS Fargate and Amazon ECS
 
 ECS:
 	- Integrations for:
