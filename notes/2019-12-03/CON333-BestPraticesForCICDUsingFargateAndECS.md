@@ -4,7 +4,6 @@
 	- Integrations for:
 		- Codepipline
 			1. Source
-				- 
 			2. Build
 				- Codebuild: "Builds as a service"
 					- Good for containers
