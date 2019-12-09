@@ -1,0 +1,3 @@
+# Notes folder
+
+## Sessions
