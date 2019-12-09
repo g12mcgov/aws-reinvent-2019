@@ -49,5 +49,5 @@
 			2. Amazon EC2 On-Demand
 			* Now ability to mix capacity providers
 		* Vanguard example:
-		![Drag Racing](Dragster.jpg)
+		![](../../images/2019-12-04/CON213-VanguardArchitecture.png)
 	3. Architecture patterns

@@ -1,19 +1,16 @@
 # ANT309-R1 - [REPEAT 1] Responding to customer needs in real time with Amazon MSK
 
-How things were in the 80's:
-	- 
-
-Data Flywheel:
+* Data Flywheel:
 	- Data Collected -> Data Analyzed -> Applications Evolve -> Happier Customers
 
-"Datasphere Growth" 61% YoY
+* "Datasphere Growth" 61% YoY
 	- IOT is a major contributor
 		- 90ZTB by 2021
 		- 30% of data will be analyzed in real-time
 
-"Data Reactivity"
+* "Data Reactivity"
 
-Why process data in real-time:
+* Why process data in real-time:
 	- Wow customers
 	- Threats
 		- Instrumeting telemtry in network to respond to anomalies
@@ -21,12 +18,12 @@ Why process data in real-time:
 	- Timely decisions
 	- Boost agility
 
-Foundation of real-time analytics system:
+* Foundation of real-time analytics system:
 	1. Data can be produced, captured, and process in milliseconds
 	2. Data is buffered, enabling parallel and independent I/O
 	3. Data must be captured and processed in the order it was produced.
 
-Data streams are for real-time:
+* Data streams are for real-time:
 	- Commit log
 		- Record of events that were produced by a producer
 	- Producers and cosumers are decoupled
@@ -35,18 +32,18 @@ Data streams are for real-time:
 	- Produce -> consume in milliseconds
 	- Logical grouping of "partitions" or "shards"
 
-Current Trends:
+* Current Trends:
 	- Data streams being used for messaging
 	- Replacing batch workflows to lower latency
 	- Event "spinal cord" for micro-services
 	- Database integrations are happening via change streams
 	- In-stream machine learning and AI for real-time automation
 
-2 AWS Data Streaming Services:
+* 2 AWS Data Streaming Services:
 	- Kinesis
 	- MSK
 
-Kafka:
+* Kafka:
 	- Performant
 		- Gigabytes per second, 10ms p99
 	- Open source
@@ -61,7 +58,7 @@ Kafka:
 		- No console, no visible metrics
 		- Hard AWS integrations
 
-MSK:
+* MSK (Managed Streaming Kafka):
 	- Fully managed production ready Apache Kafka cluster
 	- Real-deal, not a fork
 	- Global availability
@@ -69,13 +66,13 @@ MSK:
 	- Least expensive managed Kafka provider
 	- 100 brokers per MSK cluster
 
-Example:
+* Example:
 	- Publish JMX data into something like Prometheus
 	- Integrations now to export metrics via MSK into 3rd party providers (like Datadog)
 
-Flink integration with MSK clusters + EC2 Kafka clusters
+* Flink integration with MSK clusters + EC2 Kafka clusters
 
-Adobe Use-Case:
+* Adobe Use-Case:
 	- Scale:
 		- 100B messages per day
 		- 200 Kafka Brokers
@@ -105,6 +102,5 @@ Adobe Use-Case:
 			- Kafka Connect for source and sink connectors
 			- Stream processing using Flink
 			- Event filtering, transformations, and branching
-		- <Insert images>
-			- Cluster replication for proteting main Kafka pipeline
+		![](../../images/2019-12-03/ANT309-RespondingToCustomersRealTimeAmazonMSK_2.png)
 		- Spinnaker tool helping them get close to one click deployments

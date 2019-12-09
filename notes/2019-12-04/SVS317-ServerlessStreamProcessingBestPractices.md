@@ -1,26 +1,26 @@
 # Stream Processing
 
-What is Streaming?
+* What is Streaming?
 	1. High volume
 	2. Continuous
 	3. Ordered, incremental
 	4. Low latency
 
-Popular because:
+* Popular because:
 	- Batch vs. Stream Processing (real time metrics, real-time spending alerts/caps, etc...)
 
-Serveless operational model
+* Serveless operational model
 	- No provisioning
 	- Automatic scaling
 	- Pay for value
 
-Amazon Kinesis
+* Amazon Kinesis
 	- Data streams
 	- Data analytics
 	- Data Firehose
 	- MSK (Managed streaming service for Kafka)
 
-4 Key stages:
+* 4 Key stages:
 	1. Ingestion (and buffer)
 		- 2 services:
 			- Data streams
@@ -48,6 +48,9 @@ Amazon Kinesis
 				2. Overall cost
 					- Buffer and batch
 					- Compression and encoding of messages
+
+		![](../../images/2019-12-04/SVS317-ServerlessStreamProcessingBestPractices.png)
+	
 	2. Process
 		- Kinesis:
 			- AWS Kinesis Data Analytics
@@ -97,7 +100,7 @@ Amazon Kinesis
 					- Windows -> emits a new stream for that window
 				2. Apache Flink Java written program)
 
-Comcast X1:
+* Comcast X1:
 	- Canary score = release validity check
 		- Metrics:
 			- Heap size

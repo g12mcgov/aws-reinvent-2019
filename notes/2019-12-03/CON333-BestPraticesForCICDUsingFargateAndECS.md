@@ -1,6 +1,6 @@
 # CON333 - Best practices for CI/CD using AWS Fargate and Amazon ECS
 
-ECS:
+* ECS:
 	- Integrations for:
 		- Codepipline
 			1. Source
@@ -25,7 +25,7 @@ ECS:
 				- Jenkins
 				- Spinnaker pipeline
 
-Best Practices for CI/CD:
+* Best Practices for CI/CD:
 	1. Automated Releases
 	2. Safe Reployments
 		- Roll back automatically on alarms + validation tests
@@ -38,7 +38,9 @@ Best Practices for CI/CD:
 				* App load balancer
 				* Production traffic listener
 				* Blug target group
-				* Blue tasks v1 code (Insert image)
+				* Blue tasks v1 code
+				![](../../images/2019-12-03/CON333-BestPraticesForCICDUsingFargateAndECS_1.png)
+				![](../../images/2019-12-03/CON333-BestPraticesForCICDUsingFargateAndECS_2.png)
 			- Some problems aren't found until production - a good example of this is compatibility issues with other systems that are current running in production (maybe related to versioning of desparate system)
 			- Lifecycle hook:
 				- Lambda functions to execute after codedeploy status changes (like a health status code -> deploy service)
@@ -54,4 +56,4 @@ Best Practices for CI/CD:
 			- Many repeated Cloudformation patterns across AWS were being duplicated
 				- Tools were introduced for a centralized CloudFormation config storage
 				- Pretty cool, these CloudFormation patterns are exposed out as packages, like an npm package.
-					- <Insert picture here>
+				![](../../images/2019-12-03/CON333-BestPraticesForCICDUsingFargateAndECS_3.png)
